@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# This is a simple Hello World Alexa Skill, built using
-# the implementation of handler classes approach in skill builder.
 import logging
 
 from ask_sdk_core.skill_builder import SkillBuilder
@@ -118,10 +114,6 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 
         return handler_input.response_builder.response
 
-##################################
-###       Custom Skill        ####
-###       Gather Servers      ####
-##################################
 
 class GatherServersIntentHandler(AbstractRequestHandler):
     def can_handle(self, handler_input):
